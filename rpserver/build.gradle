@@ -61,9 +61,9 @@ dependencies {
     implementation('javax.activation:activation:1.1.1')
     implementation('org.springframework.boot:spring-boot-devtools')
     compileOnly('org.projectlombok:lombok')
-    annotationProcessor 'org.projectlombok:lombok:1.18.2'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
 
     implementation project(':common')
     compileOnly('org.springframework.boot:spring-boot-configuration-processor')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
 }

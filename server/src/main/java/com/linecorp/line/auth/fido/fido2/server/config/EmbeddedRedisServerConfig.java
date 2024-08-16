@@ -31,7 +31,7 @@ import org.springframework.util.StringUtils;
 import redis.embedded.RedisServer;
 
 @Component
-@Profile("!prod")
+@Profile("!prod && !local")
 public class EmbeddedRedisServerConfig {
     @Value("${redis.port}")
     private int redisPort;
